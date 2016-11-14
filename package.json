@@ -1,0 +1,11 @@
+{
+  "name": "leighton-test",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "karma": "*",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "*",
+    "karma-phantomjs-launcher": "*"
+  }
+}

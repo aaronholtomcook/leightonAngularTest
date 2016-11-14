@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Leighton Angular App</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" type="text/css" href="css/leighton.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-app="app" ng-controller="appCtrl">
+	<header>
+		<div class="container">
+			<p>{{greeting}} Search for photos tagged with whatever you search.</p>
+            <input type="text" class="form-control" id="tagged" placeholder="Enter your tag search term here" data-ng-model="searchTerms">
+            <button role="button" data-ng-click="search()">Search &raquo;</button>
+		</div>
+    </header>
+	<main>
+		<div class="container">
+			<form name="photo-filter" class="photo-filter">
+				<label for="exampleInputName2">Photos to show</label>
+				<select id="exampleInputName2" class="form-control">
+					<option>5</option>
+					<option>10</option>
+					<option>15</option>
+					<option>20</option>
+				</select>
+			</form>
+			<div class="result">
+				<img src="http://placehold.it/350x150" />
+				<p>Added By: User</p>
+				<p>Tags: football games sport team</p>
+			</div>
+			<div class="result">
+				<img src="http://placehold.it/350x150" />
+				<p>Added By: User</p>
+				<p>Tags: football games sport team</p>
+			</div>
+			<div class="clear"></div>
+			<hr>
+		</div>
+	</main>
+    <footer>
+        <p class="container">&copy; Awesome Enterprises</p>
+    </footer>
+</body>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="src/app.js"></script>
+
+</html>
